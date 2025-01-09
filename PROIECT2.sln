@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "PROIECT", "PROIECT\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX\PROIECT.exe", "{9F2D1234-5C1F-4530-B4B8-416DA7F5A0EC}"
+	ProjectSection(DebuggerProjectSystem) = preProject
+		PortSupplier = 00000000-0000-0000-0000-000000000000
+		Executable = D:\FSEGA\AN3_SEM1\MediiDeProgramare\PROIECT\PROIECT\PROIECT\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX\PROIECT.exe
+		RemoteMachine = BOBO
+		StartingDirectory = D:\FSEGA\AN3_SEM1\MediiDeProgramare\PROIECT\PROIECT\PROIECT\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX
+		Environment = Default
+		LaunchingEngine = 00000000-0000-0000-0000-000000000000
+		UseLegacyDebugEngines = No
+		LaunchSQLEngine = No
+		AttachLaunchAction = No
+		IORedirection = Auto
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F2D1234-5C1F-4530-B4B8-416DA7F5A0EC}.Release|x64.ActiveCfg = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31D8E595-E844-4B87-9568-ACC1A7FC4C04}
+	EndGlobalSection
+EndGlobal

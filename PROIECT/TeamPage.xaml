@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PROIECT.TeamPage"
+             Title="Team Management">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <!-- Editor pentru numele echipei -->
+            <Entry Placeholder="Enter Team Name" Margin="20"
+                   Text="{Binding Team.Name}" />
+
+            <!-- Editor pentru divizia echipei -->
+            <Entry Placeholder="Enter Division" Margin="20"
+                   Text="{Binding Team.Division}" />
+
+            <!-- Grid cu butoanele Save și Delete -->
+            <Grid Margin="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Buton Save -->
+                <Button Text="Save Team" Clicked="OnSaveTeamClicked" />
+
+                <!-- Buton Delete -->
+                <Button Grid.Column="1" Text="Delete Team" Clicked="OnDeleteTeamClicked" />
+            </Grid>
+
+            <!-- ListView pentru afișarea jucătorilor din echipă -->
+            <Label Text="Players in Team" FontAttributes="Bold" Margin="20,0,0,10" />
+            <ListView x:Name="listView" Margin="20"
+                      ItemsSource="{Binding Players}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding FirstName}" Detail="{Binding LastName}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <!-- Buton pentru adăugarea unui jucător -->
+            <Button Text="Add Player to Team" Clicked="OnAddPlayerClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
